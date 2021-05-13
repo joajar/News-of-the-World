@@ -1,0 +1,22 @@
+.click-me {
+    margin-top: 10px;
+    font-size: 1.25rem;
+}
+
+.data-1, .final-1, .final-2, .final-3, .error-occurred-1, .error-occurred-2 {
+    margin-top: 20px;
+    font-size: 1.37rem;
+}
+
+.data-2 {
+    margin-top: 10px;
+}
+
+.final-2 {
+    color: blue;
+}
+
+.error-occurred-1 {
+    font-weight: bold;
+}
+

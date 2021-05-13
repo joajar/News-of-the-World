@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News - path</title>
+
+    <link href="../static/custom.css"
+          th:href="@{/../custom.css}" rel="stylesheet" media="screen"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <img src="../static/images/NewsAPI.png"
+                     th:src="@{/../images/NewsAPI.png}"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div>
+                    <form action="#" th:action="@{/data}" th:object="${data}" method="post">
+                        <div class="data-1">
+                            Enter the path for a new file where news will be stored:
+                        </div>
+
+                        <div>
+                            <input class="form-control" type="text" th:field="*{content}" />
+                        </div>
+
+                        <div class="data-2">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News - final</title>
+
+    <link href="../static/custom.css"
+          th:href="@{/../custom.css}" rel="stylesheet" media="screen"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <img src="../static/images/NewsAPI.png"
+                     th:src="@{/../images/NewsAPI.png}"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div>
+                    <form action="#" th:action="@{/data}" th:object="${data}" method="post">
+                        <div class="final-1">
+                            The path where you may find your new file with news:
+                        </div>
+
+                        <div class="final-2" th:text="${data.content}"></div>
+
+                        <div class="final-3 col-md-8 offset-md-3">
+                            <a href="/">Return to the starting page</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
